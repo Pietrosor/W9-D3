@@ -6,6 +6,11 @@ import Welcome from "./components/Welcome"
 import AllTheBooks from "./components/AllTheBooks"
 import SingleBook from "./components/SinlgeBook"
 import { Container } from "react-bootstrap"
+import fantasy from "./data/fantasy.json"
+import romance from "./data/romance.json"
+import horror from "./data/horror.json"
+import scifi from "./data/scifi.json"
+import history from "./data/history.json"
 
 function App() {
   return (
@@ -13,7 +18,11 @@ function App() {
       <MyNav />
       <Container>
         <Welcome />
-        <AllTheBooks />
+        <SingleBook book={fantasy[12]} />;
+        <SingleBook book={horror[8]} />;
+        <SingleBook book={romance[5]} />;
+        <SingleBook book={scifi[1]} />;
+        <SingleBook book={history[12]} />;
       </Container>
       <MyFooter />
     </>
