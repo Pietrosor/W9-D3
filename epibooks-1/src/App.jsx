@@ -11,6 +11,7 @@ import romance from "./data/romance.json"
 import horror from "./data/horror.json"
 import scifi from "./data/scifi.json"
 import history from "./data/history.json"
+import BookList from "./components/BookList"
 
 function App() {
   return (
@@ -18,11 +19,12 @@ function App() {
       <MyNav />
       <Container>
         <Welcome />
-        <SingleBook book={fantasy[12]} />;
+        {/* <SingleBook book={fantasy[12]} />;
         <SingleBook book={horror[8]} />;
         <SingleBook book={romance[5]} />;
         <SingleBook book={scifi[1]} />;
-        <SingleBook book={history[12]} />;
+        <SingleBook book={history[12]} />; */}
+        <BookList books={romance} />
       </Container>
       <MyFooter />
     </>
