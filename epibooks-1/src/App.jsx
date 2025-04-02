@@ -21,9 +21,9 @@ function App() {
         <Welcome />
         {/* <SingleBook book={fantasy[12]} />;
         <SingleBook book={horror[8]} />;
-        <SingleBook book={romance[5]} />;
+        <SingleBook book={romance[5]} />; */}
         <SingleBook book={scifi[1]} />;
-        <SingleBook book={history[12]} />; */}
+        <SingleBook book={history[12]} />;
         <BookList books={romance} />
       </Container>
       <MyFooter />
